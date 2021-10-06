@@ -1,0 +1,13 @@
+{%  extends 'studapp/base.html' %}
+
+{% block content %}
+<a href="{% url 'studapp:studlist' %}">Go back</a>
+<h3>Confirm</h3>
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>Are you sure you want to delete {{ object.fname }}</p>
+    <input type="submit" value="Delete">
+    <a href="{% url 'studapp:studlist' %}">Cancel</a>
+</form>
+
+{% endblock %}

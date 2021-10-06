@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 8vh;
+    background-color: lightgreen;
+}
+.nav-brand{
+    margin-left: 10px;
+    color: rgb(146, 140, 140);
+    font-size: 25px;
+}
+.brandDiv{
+    padding-top: 10px;
+}
+.lnk{
+    color: rgb(146, 140, 140);
+    text-decoration: none;
+}
+.studList{
+    color: rgb(146, 140, 140);
+    text-decoration: none;
+
+  
+
+}
+.ListTitleDiv{
+    padding: 10px;
+    
+
+}
+.ListTitle{
+    color:rgb(146, 140, 140) ;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    width: 60vh;
+    height: 8vh;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 20px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px gray;
+}
+.c1{
+ padding-top: 8px;
+ margin-left: 20px;
+ width: 90%;
+ height: 100%;
+
+}
+.c2{
+    height: 100%;
+    width: 10%;
+    padding: 5px;
+    padding-top: 10px;
+}
+.x{
+
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+}

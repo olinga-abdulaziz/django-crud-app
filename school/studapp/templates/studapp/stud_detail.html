@@ -1,0 +1,18 @@
+{%  extends 'studapp/base.html' %}
+
+{% block content %}
+<a href="{% url 'studapp:studlist' %}">Go back</a>
+<h3>STUDENT DETAIL</h3>
+
+<div>
+    <p><b>FIRST NAME :</b>{{ object.fname }}</p>
+    <p><b>LAST NAME :</b>{{ object.lname }}</p>
+    <p><b>FORM :</b>{{ object.form }}</p>
+    <p><b>DORM :</b>{{ object.dorm }}</p>
+    <p><b>PARENT :</b>{{ object.parent_name }}</p>
+</div>
+<div>
+    <a href="{% url 'studapp:updatestudent' object.id %}">Edit</a>
+</div>
+
+{% endblock %}
