@@ -1,0 +1,22 @@
+{% extends 'baseapp/base.html' %}
+{% block content %}
+
+<div>
+    {% if user.is_authenticated %}
+    <p><strong>you loged in as {{user.username}}</strong></p>
+    <ul>
+        {% for r in object_list %}
+        <li>
+            <div>
+                <img src="{{ r.image.url }}" alt="" width="200" height="200"> <br>
+                <strong><h4>{{ r.caption }}</h4></strong>
+                <p>{{ r.desc }}</p>
+            </div>
+        </li> <br>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h2>please <a href="{% url 'login' %}">Login</a> to view content</h2>
+    {% endif %}
+</div>
+{% endblock%}
